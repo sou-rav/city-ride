@@ -105,52 +105,52 @@ const Login = () => {
         });
     };
 
-    
-        const handleGoogleSignIn = () => {
-            const provider = new firebase.auth.GoogleAuthProvider();
 
-            firebase.auth()
-                .signInWithPopup(provider)
-                .then((result) => {
-                    const { displayName, email } = result.user;
-                    const signInUser = { name: displayName, email }
-                    console.log(signInUser)
-                    setLoggedInUser(signInUser)
-                    history.replace(from)
+    const handleGoogleSignIn = () => {
+        const provider = new firebase.auth.GoogleAuthProvider();
 
-                }).catch((error) => {
-                    console.log(error)
-                });
-        }
+        firebase.auth()
+            .signInWithPopup(provider)
+            .then((result) => {
+                const { displayName, email } = result.user;
+                const signInUser = { name: displayName, email }
+                console.log(signInUser)
+                setLoggedInUser(signInUser)
+                history.replace(from)
+
+            }).catch((error) => {
+                console.log(error)
+            });
+    }
 
 
-        return (
+    return (
+        <div>
             <div>
-                <div>
                 <Header></Header>
-                </div>
-                <div style={{ textAlign: 'center' }} >
-                    <input type="checkbox" onChange={() => setNewUser(!newUser)} name="" id="" />
-                    <label htmlFor="newUser">New User SignUp</label>
-
-                </div>
-                <form onSubmit={handleSubmit} style={{ textAlign: 'center' }} >
-                    {newUser && <input name="name" type="text" onBlur={handleBlur} placeholder="enter your name" />}
-                    <br />
-                    <input type="text" name="email" onBlur={handleBlur} placeholder="enter your email" required />
-                    <br />
-                    <input type="password" name="password" onBlur={handleBlur} placeholder="enter your password" required />
-                    <br />
-                    <input type="submit" value={newUser ? 'Sign up' : 'Sign In'} />
-                </form>
-                <div style={{ textAlign: 'center' }}>
-                    <button onClick={handleGoogleSignIn} >Google Login</button>
-                </div>
-
-                <p style={{ color: "red" }}>{user.error}</p>
-                {user.success && <p style={{ color: "green" }}>User {newUser ? 'Created' : 'Logged In'} Successfully</p>}
+            </div>
+            <div style={{ textAlign: 'center' }} >
+                <input type="checkbox" onChange={() => setNewUser(!newUser)} name="" id="" />
+                <label htmlFor="newUser">New User SignUp</label>
 
             </div>
-        );
-    };
+            <form onSubmit={handleSubmit} style={{ textAlign: 'center' }} >
+                {newUser && <input name="name" type="text" onBlur={handleBlur} placeholder="enter your name" />}
+                <br />
+                <input type="text" name="email" onBlur={handleBlur} placeholder="enter your email" required />
+                <br />
+                <input type="password" name="password" onBlur={handleBlur} placeholder="enter your password" required />
+                <br />
+                <input type="submit" value={newUser ? 'Sign up' : 'Sign In'} />
+            </form>
+            <div style={{ textAlign: 'center' }}>
+                <button onClick={handleGoogleSignIn} >Google Login</button>
+            </div>
+
+            <p style={{ color: "red" }}>{user.error}</p>
+            {user.success && <p style={{ color: "green" }}>User {newUser ? 'Created' : 'Logged In'} Successfully</p>}
+
+        </div>
+    );
+};
 export default Login;
