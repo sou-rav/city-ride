@@ -1,0 +1,12 @@
+.div-style img{
+    width: 150px;
+}
+.div-style{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+}

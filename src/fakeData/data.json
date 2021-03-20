@@ -1,0 +1,29 @@
+[{
+    "id": 1,
+    "type": "Bike",
+    "img": "https://i.postimg.cc/7630FBSY/Frame.png",
+    "icon": "https://i.postimg.cc/wTc1JM1C/peopleicon.png",
+    "capacity": 2,
+    "fare": 67
+  }, {
+    "id": 2,
+    "type": "Bus",
+    "img": "https://i.postimg.cc/854sdxhW/Frame-1.png",
+    "icon": "https://i.postimg.cc/wTc1JM1C/peopleicon.png",
+    "capacity": 4,
+    "fare": 67
+  }, {
+    "id": 3,
+    "type": "Car",
+    "img": "https://i.postimg.cc/xTcqHxqJ/Frame-2.png",
+    "icon": "https://i.postimg.cc/wTc1JM1C/peopleicon.png",
+    "capacity": 5,
+    "fare": 67
+  }, {
+    "id": 4,
+    "type": "Rail",
+    "img": "https://i.postimg.cc/6qGJ6v53/Group.png",
+    "icon": "https://i.postimg.cc/wTc1JM1C/peopleicon.png",
+     "capacity": 10,
+    "fare": 67
+  }]
