@@ -134,7 +134,10 @@ const Login = () => {
                 <label htmlFor="newUser">New User SignUp</label>
 
             </div>
-            <form onSubmit={handleSubmit} style={{ textAlign: 'center' }} >
+            <form onSubmit={handleSubmit}
+                style={{
+                    textAlign: 'center'
+                }} >
                 {newUser && <input name="name" type="text" onBlur={handleBlur} placeholder="enter your name" />}
                 <br />
                 <input type="text" name="email" onBlur={handleBlur} placeholder="enter your email" required />

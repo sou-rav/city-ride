@@ -5,7 +5,14 @@ const SearchRider = () => {
 
   return (
     <div>
-      <h1>this is SearchRider</h1>
+      <form action="submit">
+        <h3>Pick From</h3>
+      <input type="text" />
+      <h3>Pick To</h3>
+        <input type="text" />
+        <br/>
+        <button>Search</button>
+      </form>
     </div>
   );
 };

@@ -4,4 +4,4 @@
 
 due to my current situation this assignment is incomplete
 
-live site link: [click here](https://gifted-kepler-1cf671.netlify.app/login)
+live site link: [click here](https://gifted-kepler-1cf671.netlify.app)
