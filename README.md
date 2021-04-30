@@ -7,7 +7,7 @@
 
 ### Functions: :
 
-- react internet site the use of react-router, firebase authentication, and google map API. On this website, the consumer can pick out their favoured motors and compare the price of those motors for their preferred routes.
+- react website the use of react-router, firebase authentication, and google map API. On this website, the consumer can pick out their favoured motors and compare the price of those motors for their preferred routes.
 
 ##### this was a project for my programming hero assignment 9
 
